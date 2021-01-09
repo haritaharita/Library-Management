@@ -1,0 +1,121 @@
+﻿<Window x:Class="FinalProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+       
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+            <Button 
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Content="Lend Media"
+            Name="Button_LendMedia"
+                Click="Click_LendMedia"
+            />
+            <Button 
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Content="Return Media"
+            Name="Button_ReturnMedia"
+                Click="Click_ReturnMedia"
+            />
+
+            <Button 
+            Grid.Row="2"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Content="Media info"
+            Name="Button_MediaInfo"
+            Click="Click_MediaInfo"
+            />
+
+            <Button 
+            Grid.Row="3"
+            Grid.ColumnSpan="2"
+            Grid.Column="0"
+            Content="Member info"
+            Name="MemberInfo_Button"
+            Click="Click_MemberInfo"
+            />
+
+            <Button 
+            Grid.Row="7"
+            Grid.Column="0"
+            Content="Modify Member"
+            Name="ModifyMember_Button"
+            Click="Click_ModifyMember"
+            />
+            <Button 
+            Grid.Row="7"
+            Grid.Column="1"
+            Content="Modify Media"
+            Name="ModifyMedia_Button" 
+            Click="Click_ModifyMedia"
+            />
+
+            <DataGrid Name="PeopleName"
+                  Grid.Row="4"
+                  Grid.Column="0"
+                  Grid.ColumnSpan="2"
+                  Grid.RowSpan="3"
+                  AutoGenerateColumns="False"
+            >
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Name"
+                                    Binding="{Binding Name,Mode=OneWay}"
+                                        Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <DataGrid Name="GridBook"
+                  Grid.Row="0"
+                  Grid.Column="2"
+                  Grid.ColumnSpan="6"
+                  Grid.RowSpan="7"
+                  AutoGenerateColumns="False"
+            >
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Title"
+                                    Binding="{Binding Title,Mode=OneWay}" Width="*"/>
+                    <DataGridTextColumn Header="Type"
+                                     Binding="{Binding Type,Mode=OneWay}" Width="*"/>
+                    <DataGridCheckBoxColumn Header="Availablity"
+                                        Binding="{Binding Availability,Mode=OneWay}" Width="*"/>
+                    <DataGridTextColumn Header="Borrower"
+                                    Binding="{Binding Borrower,Mode=OneWay}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+        </Grid>
+
+   
+</Window>

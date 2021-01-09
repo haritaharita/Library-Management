@@ -1,0 +1,138 @@
+﻿<Page x:Class="FinalProject.PageMedia"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FinalProject"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageMedia">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120*"/>
+            <ColumnDefinition Width="130*"/>
+            <ColumnDefinition Width="130*"/>
+            <ColumnDefinition Width="130*"/>
+            <ColumnDefinition Width="130*"/>
+            <ColumnDefinition Width="130*"/>
+            <ColumnDefinition Width="130*"/>
+            <ColumnDefinition Width="130*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock
+            Grid.Row="0"
+            Text="Media Info"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            FontSize="30"
+            Grid.ColumnSpan="3"
+            Grid.Column="2"
+            FontWeight="Bold"            
+            />
+
+        <TextBlock
+            Grid.Row="1"
+            Grid.ColumnSpan="3"
+            Grid.Column="0"
+            Text="TITLE -"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            FontSize="30"
+            FontWeight="Bold" 
+            />
+        <TextBlock
+            Grid.Row="1"
+            Grid.Column="3"
+            Text="abc"
+            Name="Text_MediaTitle"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            FontSize="30" 
+            />
+
+        <TextBlock
+            Grid.Row="2"
+            Grid.Column="0"
+            Text="TYPE -"
+            Grid.ColumnSpan="3"
+            
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            FontSize="30"
+            FontWeight="Bold" 
+            />
+        <TextBlock
+            Grid.Row="2"
+            Grid.Column="3"
+            Text="xyz"
+            Name="Text_MediaType"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            FontSize="30" 
+            />
+
+
+        <TextBlock
+            Grid.Row="3"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            
+            Text="AVAILABLITY -"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            FontSize="25"
+            FontWeight="Bold" 
+            />
+        <TextBlock
+            Grid.Row="3"
+            Grid.Column="3"
+            Text="xyz"
+            Name="Text_Availiblity"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            FontSize="30" 
+            />
+
+        <TextBlock
+            Grid.Row="4"
+            Grid.Column="0"
+            Text="BORROWER -"
+            Grid.ColumnSpan="3"
+      
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            FontSize="25"
+            FontWeight="Bold"
+            />
+        <TextBlock
+            Grid.Row="4"
+            Grid.Column="3"
+            Text="name"
+            Name="Text_Borrower"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            FontSize="30" 
+            />
+
+        <Button
+            Grid.Row="4"
+            Content="Close"
+            FontSize="25"
+            FontWeight="DemiBold"
+            FontStyle="Italic"
+            Grid.ColumnSpan="7"
+            Grid.Column="0" 
+            Grid.RowSpan="2"
+            />
+    </Grid>
+</Page>

@@ -1,0 +1,77 @@
+﻿<Page x:Class="FinalProject.PageMembers"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FinalProject"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageMembers">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock
+            Grid.Row="0"
+            Text="Member Info"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            FontSize="30"
+            Grid.ColumnSpan="5"
+            Grid.Column="0"
+            FontWeight="Bold"
+            
+            />
+
+        <TextBlock
+            Grid.Row="1"
+            Grid.ColumnSpan="2"
+           
+            Grid.Column="0"
+            Text="Name -"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            FontSize="30"
+            FontWeight="Bold"
+            />
+        <TextBlock
+            Grid.Row="1"
+            Grid.Column="2"
+            Text="abc"
+            Name="MemberName"
+            Grid.ColumnSpan="5"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            FontSize="30" 
+            
+            />
+        <Button
+            Grid.Row="5"
+            Content="Close"
+            FontSize="25"
+            FontWeight="DemiBold"
+            FontStyle="Italic"
+            Grid.ColumnSpan="6"
+            Grid.Column="0"
+            Click="CloseMembersInfo"
+            />
+        
+    </Grid>
+</Page>
